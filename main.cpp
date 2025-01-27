@@ -5,9 +5,11 @@ using namespace std;
 
 int main()
 {
-	setlocale(LC_ALL, "RUS");
+	SetConsoleCP(1251);         
+	SetConsoleOutputCP(1251);   
+
 	std::string name;
-	cout << "ââåäèòå èìÿ ";
+	cout << "Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ ";
 	cin >> name;
 	Person men(name);
 	men.print();
